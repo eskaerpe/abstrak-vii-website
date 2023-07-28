@@ -15,12 +15,20 @@ body {
     border: 2px solid #af3778;
 }
 
-.jumbotron {
+section {
     padding-top: 6rem;
-    min-height: 15rem;
+}
+
+.jumbotron {
+    padding-top: 3rem;
+    /* min-height: 15rem; */
     background-color: #a5296d;
 
     color: white;
+}
+
+.jumbotron p {
+    text-align: justify;
 }
 
 .about-us {
