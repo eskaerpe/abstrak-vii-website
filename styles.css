@@ -1,3 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 2000px;
+}
+
 #carouselMiniGallery {
-    width: 60%;
+    width: 80%;
+    max-height: 50%;
+}
+
+#navbar-ticket-btn {
+    border: 2px solid #af3778;
+}
+
+.jumbotron {
+    padding-top: 6rem;
+    min-height: 15rem;
+    background-color: #a5296d;
+
+    color: white;
+}
+
+.about-us {
+    min-height: 15rem;
+    /* background-color: #a62a6e; */
+}
+
+.jumbotron .container {
+    width: 70%;
+
+    /* background-color: blue; */
+}
+
+.jumbotron .container .row .col-sm {
+    /* border: 2px solid black; */
 }
