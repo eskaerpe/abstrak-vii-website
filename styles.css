@@ -32,16 +32,61 @@ section {
     padding-top: 1rem;
 }
 
+#jumbotron-title {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 3vw;
+}
 .landing-section {
     padding-top: 3rem;
     /* min-height: 15rem; */
-    background-color: #a5296d;
+    /* background-color: #a5296d; */
+    background-image: url("assets/IMG_2810 edited.JPG");
+    background-size: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
 
     color: white;
 }
 
+@media only screen and (max-width: 1300px) {
+    .landing-section {
+        background-image: url("assets/IMG_2810 edited.JPG");
+        background-position: center;
+        background-size: 120%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .landing-section {
+        background-image: url("assets/IMG_2810 edited.JPG");
+        background-size: 150%;
+        background-repeat: no-repeat;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .landing-section {
+        background-image: url("assets/IMG_2810 edited.JPG");
+        background-size: 220%;
+        background-repeat: no-repeat;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .landing-section {
+        background-image: url("assets/IMG_2810 edited.JPG");
+        background-size: 400%;
+        background-repeat: no-repeat;
+    }
+}
+
 .landing-section .container-fluid {
     width: 50%;
+}
+@media only screen and (max-width: 1200px) {
+    .landing-section .container-fluid {
+        width: 80%;
+    }
 }
 
 .landing-section svg {
@@ -59,6 +104,13 @@ section {
     background-color: #a52962;
     border: 1rem solid #a52962;
     height: 91%;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 1000px) {
+    .card {
+        font-size: 100%;
+    }
 }
 
 .card-body {
@@ -93,7 +145,10 @@ section {
     color: white;
     transition: 0.5s;
 }
-.card-body:hover {
+.card:hover {
+    transform: scale(1.03);
+    /* transform: translate(0px, 10px); */
+    box-shadow: 0px 0px 15px 1px white;
 }
 
 .jumbotron .container {
