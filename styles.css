@@ -11,6 +11,14 @@ font-family: 'Roboto', sans-serif; */
     padding: 0;
 }
 
+body {
+    background-color: #3a0043;
+}
+
+.navbar .container-fluid {
+    width: 75%;
+}
+
 #carouselMiniGallery {
     width: 80%;
     max-height: 50%;
@@ -21,10 +29,10 @@ font-family: 'Roboto', sans-serif; */
 }
 
 section {
-    padding-top: 6rem;
+    padding-top: 1rem;
 }
 
-.jumbotron {
+.landing-section {
     padding-top: 3rem;
     /* min-height: 15rem; */
     background-color: #a5296d;
@@ -32,17 +40,60 @@ section {
     color: white;
 }
 
+.landing-section .container-fluid {
+    width: 50%;
+}
+
+.landing-section svg {
+    margin-top: 2rem;
+}
+
 #jumbotron-title {
     font-family: "Noto Serif Vithkuqi", serif;
 }
 
-.jumbotron p {
-    text-align: justify;
+.card {
+    /* background-color: #3a0043; */
+    color: white;
+    border: none;
+    background-color: #a52962;
+    border: 1rem solid #a52962;
+    height: 91%;
 }
 
-.about-us {
-    min-height: 15rem;
-    /* background-color: #a62a6e; */
+.card-body {
+    color: white;
+    position: relative;
+    top: -3.5rem;
+    /* transform: translateY(-3.3rem); */
+}
+.card-text {
+    padding-bottom: 0;
+    margin-bottom: 0.5rem;
+}
+.card-body h2 {
+    text-shadow: 2px 2px rgb(0, 0, 0, 0.5);
+    text-align: center;
+}
+.card-body p {
+    text-align: justify;
+}
+.card-body a {
+    margin: 0;
+}
+.card-body .wikipedia {
+    min-width: 100%;
+    max-height: 5rem;
+}
+.card-body .instagram {
+    min-width: 100%;
+    margin-top: 0.2rem;
+    background-color: #3a0043;
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.5s;
+}
+.card-body:hover {
 }
 
 .jumbotron .container {
