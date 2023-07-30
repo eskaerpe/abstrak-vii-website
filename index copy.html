@@ -19,7 +19,14 @@
         <link rel="stylesheet" href="styles.css" />
 
         <!-- AOS Animation -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+        <!-- Jos  Animation scroll -->
+        <link id="jos-stylesheet" rel="stylesheet" href="/dist/jos.css" />
+        <script src="JOS-Animation-Library-master/dist/jos.min.js"></script>
+        <script>
+            JOS.init();
+        </script>
 
         <!-- Font Big Title Jumbotron -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,28 +41,26 @@
         <!-- Naviagtion Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3a0043">
             <div class="container-fluid">
-                <a class="navbar-brand text-light" href="#">
-                    <img src="assets/Logo Abstrak transparent.png" alt="" width="50" data-aos="fade-right" data-aos-duration="1500" /> <b data-aos="fade-down" data-aos-duration="2500">ABSTRAK VIII</b></a
-                >
+                <a class="navbar-brand text-light" href="#"> <img src="assets/Logo Abstrak transparent.png" alt="" width="50" /> <b>ABSTRAK VIII</b></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#" data-aos="fade-down-right" data-aos-duration="2500">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#lineup" data-aos="fade-down" data-aos-duration="2500">Lineup</a>
+                            <a class="nav-link" href="#lineup">Lineup</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#activity" data-aos="fade-down" data-aos-duration="2500">Activity</a>
+                            <a class="nav-link" href="#activity">Activity</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#schedule" data-aos="fade-down" data-aos-duration="2500">Schedule</a>
+                            <a class="nav-link" href="#schedule">Schedule</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-aos="fade-down-left" data-aos-duration="2500"> More </a>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> More </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">About Us</a></li>
                                 <li><a class="dropdown-item" href="#">Partner and Support</a></li>
@@ -70,7 +75,7 @@
         <section class="landing-section">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-12 judul mt-5" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-sm-12 judul mt-5">
                         <h1 id="jumbotron-title">
                             <b
                                 >ABSTRAK VIII <br />
@@ -108,7 +113,7 @@
         </section>
 
         <!-- Countdown -->
-        <section id="countdown" data-aos="fade-up" data-aos-duration="800">
+        <section id="countdown">
             <div class="row">
                 <!-- <h2 class="text-center text-light">16 September 2023</h2> -->
                 <h3 class="col text-light text-center pb-5 mb-5" id="countdown-demo"></h3>
@@ -122,14 +127,14 @@
             <div class="container">
                 <div class="row text-center mb-3">
                     <div class="col">
-                        <h2 data-aos="fade-up" data-aos-duration="800" class="text-light">Lineup</h2>
+                        <h2 class="text-light">Lineup</h2>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-md-6 mb-3">
-                        <div class="card" data-aos-duration="1000" data-aos="fade-up-right">
+                        <div class="card">
                             <!-- <img data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1000" src="assets/Foto Maliq cropped.jpeg" class="card-img-top" alt="Foto MALIQ & D'ESSENTIALS" /> -->
-                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                                 <div class="carousel-indicators">
                                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -167,8 +172,8 @@
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <div class="card" data-aos-duration="1000" data-aos="fade-up-left">
-                            <img data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" src="assets/Foto For Revenge cropped.jpg" class="card-img-top" alt="Foto For Revenge" />
+                        <div class="card">
+                            <img src="assets/Foto For Revenge cropped.jpg" class="card-img-top" alt="Foto For Revenge" />
                             <div class="card-body">
                                 <h2>FOR REVENGE</h2>
                                 <p class="card-text">
@@ -181,8 +186,8 @@
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <div class="card" data-aos-duration="1000" data-aos="fade-right">
-                            <img data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" src="assets/Foto Vierratale cropped.jpg" class="card-img-top" alt="Foto Vierratale" />
+                        <div class="card">
+                            <img src="assets/Foto Vierratale cropped.jpg" class="card-img-top" alt="Foto Vierratale" />
                             <div class="card-body">
                                 <h2>VIERRATALE</h2>
                                 <p class="card-text">
@@ -195,8 +200,8 @@
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <div class="card" data-aos-duration="1000" data-aos="fade-left">
-                            <img data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" src="assets/Foto Raisa Anggiani cropped.jpg" class="card-img-top" alt="Foto Raisa Anggiani" />
+                        <div class="card">
+                            <img src="assets/Foto Raisa Anggiani cropped.jpg" class="card-img-top" alt="Foto Raisa Anggiani" />
                             <div class="card-body">
                                 <h2>RAISSA ANGGIANI</h2>
                                 <p class="card-text">
@@ -209,8 +214,8 @@
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <div class="card" data-aos-duration="1000" data-aos="fade-up">
-                            <img data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" src="assets/S__19136537 cropped 1.jpg" class="card-img-top" alt="Foto " />
+                        <div class="card">
+                            <img src="assets/S__19136537 cropped 1.jpg" class="card-img-top" alt="Foto " />
                             <div class="card-body">
                                 <h2>COMING SOON</h2>
                                 <p class="card-text">
@@ -223,8 +228,8 @@
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <div class="card" data-aos-duration="1000" data-aos="fade-up">
-                            <img data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" src="assets/S__19136537 cropped 2.jpg" class="card-img-top" alt="" />
+                        <div class="card">
+                            <img src="assets/S__19136537 cropped 2.jpg" class="card-img-top" alt="" />
                             <div class="card-body">
                                 <h2>COMING SOON</h2>
                                 <p class="card-text">
@@ -258,6 +263,7 @@
         <script>
             AOS.init({});
         </script>
+
         <script src="script.js"></script>
     </body>
 </html>
