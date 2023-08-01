@@ -32,7 +32,7 @@
     <!-- <a class="navbar-brand" href="#"><img src="assets/Logo Abstrak transparent.png" width="60" /> <b>ABSTRAK VIII</b></a> -->
     <body>
         <!-- Naviagtion Bar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #3a0043">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3a0043">
             <div class="container-fluid">
                 <a class="navbar-brand text-light" href="#">
                     <img src="assets/Logo Abstrak transparent.png" alt="" width="50" data-aos="fade-right" data-aos-duration="1500" />
@@ -113,23 +113,15 @@
         <!-- Countdown -->
         <section id="schedule" data-aos="fade-up" data-aos-duration="800">
             <div class="row">
-                <h2 class="text-light aos-init aos-animate text-center">Schedule</h2>
-                <h3 class="text-light aos-init aos-animate text-center">16 September 2023</h3>
-                <div class="countdown-box text-light">
-                    <ul>
-                        <li>
-                            <p id="cd-day"></p>
-                        </li>
-                        <li>
-                            <p id="cd-hour"></p>
-                        </li>
-                        <li>
-                            <p id="cd-minute"></p>
-                        </li>
-                        <li>
-                            <p id="cd-second"></p>
-                        </li>
-                    </ul>
+                <h2 data-aos="fade-up" data-aos-duration="800" class="text-light aos-init aos-animate text-center">Schedule</h2>
+                <h3 data-aos="fade-up" data-aos-duration="800" class="text-light aos-init aos-animate text-center">16 September 2023</h3>
+                <div class="countdown-container text-light">
+                    <div class="countdown-box">
+                        <div class="countdown-self" id="cd-day"></div>
+                        <div class="countdown-self" id="cd-hour"></div>
+                        <div class="countdown-self" id="cd-minute"></div>
+                        <div class="countdown-self" id="cd-second"></div>
+                    </div>
                 </div>
                 <h3 class="text-light text-center pb-5 mb-5" id="countdown-demo"></h3>
             </div>
@@ -147,7 +139,7 @@
                         <h2 data-aos="fade-up" data-aos-duration="800" class="text-light">Lineup</h2>
                     </div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="all-cards row justify-content-center">
                     <div class="col-md-6 mb-3">
                         <div class="card" data-aos-duration="1000" data-aos="fade-up-right">
                             <!-- <img data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1000" src="assets/Foto Maliq cropped.jpeg" class="card-img-top" alt="Foto MALIQ & D'ESSENTIALS" /> -->
@@ -183,8 +175,10 @@
                                     MALIQ & D'Essentials adalah sebuah grup musik beraliran jazz yang berasal dari Jakarta, Indonesia. Sejak penampilan pada pergelaran Jakarta International Jazz Festival 2005, popularitas mereka semakin
                                     meningkat terutama di kalangan anak muda Jakarta. Grup ini terdiri dari Angga Puradiredja, Indah, Ilman, Jawa, Lale, dan Widi.
                                 </p>
-                                <a href="https://id.wikipedia.org/wiki/Maliq_%26_D%27Essentials" class="wikipedia btn btn-warning">More about Maliq & D'Essentials</a>
-                                <a href="https://www.instagram.com/maliqmusic/"><i class="fa fa-instagram instagram btn"> Instagram</i> </a>
+                                <div class="more-info row">
+                                    <a href="https://id.wikipedia.org/wiki/Maliq_%26_D%27Essentials" class="wikipedia btn btn-warning col-10">More about Maliq & D'Essentials</a>
+                                    <a href="https://www.instagram.com/maliqmusic/" class="col-2"><i class="fa fa-instagram instagram btn"></i> </a>
+                                </div>
                             </div>
                         </div>
                     </div>
