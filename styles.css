@@ -6,6 +6,12 @@ font-family: 'Noto Serif Vithkuqi', serif;
 font-family: 'Proza Libre', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+#moreMaliq,
+#moreForRevenge,
+#moreVierratale {
+    display: none;
+}
+
 html {
     overflow-x: hidden;
 }
@@ -165,6 +171,12 @@ section h2 {
 }
 .card-body a {
     margin: 0;
+}
+.card-body .show-more-btn {
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
 }
 .card-body .wikipedia {
     /* min-width: 100%; */

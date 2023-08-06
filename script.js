@@ -30,3 +30,50 @@ var x = setInterval(function () {
         document.getElementById("countdown-demo").innerHTML = "EXPIRED";
     }
 }, 1000);
+
+function showMore(who) {
+    var dots = document.getElementById(`dots${who}`);
+    console.log(`dots${who}`);
+    var moreText = document.getElementById(`more${who}`);
+    var btnText = document.getElementById(`showMore${who}`);
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "More";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Less";
+        moreText.style.display = "inline";
+    }
+}
+function showMoreMaliq() {
+    var dots = document.getElementById("dotsMaliq");
+    var moreText = document.getElementById("moreMaliq");
+    var btnText = document.getElementById("showMoreBtnMaliq");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "More";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Less";
+        moreText.style.display = "inline";
+    }
+}
+function showMoreForRevenge() {
+    var dots = document.getElementById("dotsForRevenge");
+    var moreText = document.getElementById("moreForRevenge");
+    var btnText = document.getElementById("showMoreBtnForRevenge");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "More";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Less";
+        moreText.style.display = "inline";
+    }
+}
