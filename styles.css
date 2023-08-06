@@ -203,6 +203,11 @@ section h2 {
     /* background-color: blue; */
 }
 
+#schedule .row {
+    width: 80%;
+    margin: auto;
+}
+
 .countdown-container {
     width: auto;
     margin: auto;
@@ -210,7 +215,7 @@ section h2 {
 }
 
 .countdown-container .countdown-box {
-    width: 100%;
+    width: auto;
     background-color: #ffc655;
     padding: 1rem;
     border-radius: 20px;
