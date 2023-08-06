@@ -6,6 +6,9 @@ font-family: 'Noto Serif Vithkuqi', serif;
 font-family: 'Proza Libre', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+html {
+    overflow-x: hidden;
+}
 * {
     margin: 0;
     padding: 0;
@@ -95,7 +98,7 @@ section h2 {
     color: white;
     border: none;
     background-color: #a52962;
-    border: 1rem solid #a52962;
+    /* border: 1rem solid #a52962; */
 
     height: auto;
     /* max-height: 50rem; */
