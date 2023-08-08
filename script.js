@@ -33,32 +33,33 @@ var x = setInterval(function () {
 
 function showMore(who) {
     var dots = document.getElementById(`dots${who}`);
-    console.log(`dots${who}`);
+    console.log(dots);
     var moreText = document.getElementById(`more${who}`);
-    var btnText = document.getElementById(`showMore${who}`);
+    var btnText = document.getElementById(`showMoreBtn${who}`);
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
-        btnText.innerHTML = "More";
+        btnText.innerHTML = '<i class="fa fa-angle-down"></i></button>';
         moreText.style.display = "none";
     } else {
         dots.style.display = "none";
-        btnText.innerHTML = "Less";
+        btnText.innerHTML = '<i class="fa fa-angle-up"></i></button>';
         moreText.style.display = "inline";
     }
 }
 function showMoreMaliq() {
     var dots = document.getElementById("dotsMaliq");
+    console.log(dots);
     var moreText = document.getElementById("moreMaliq");
     var btnText = document.getElementById("showMoreBtnMaliq");
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
-        btnText.innerHTML = "More";
+        btnText.innerHTML = '<i class="fa fa-angle-down"></i></button>';
         moreText.style.display = "none";
     } else {
         dots.style.display = "none";
-        btnText.innerHTML = "Less";
+        btnText.innerHTML = '<i class="fa fa-angle-up"></i></button>';
         moreText.style.display = "inline";
     }
 }

@@ -6,12 +6,6 @@ font-family: 'Noto Serif Vithkuqi', serif;
 font-family: 'Proza Libre', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-#moreMaliq,
-#moreForRevenge,
-#moreVierratale {
-    display: none;
-}
-
 html {
     overflow-x: hidden;
 }
@@ -95,13 +89,22 @@ section h2 {
     position: relative;
 }
 
-.schedule-content iframe {
+/* .schedule-content iframe {
     height: 100%;
     width: 100%;
-}
+} */
 
 #lineup {
     padding-top: 5rem;
+}
+
+#moreMaliq,
+#moreForRevenge,
+#moreVierratale,
+#moreRaissa,
+#moreSO7,
+#morePanturas {
+    display: none;
 }
 
 .card {
@@ -152,7 +155,7 @@ section h2 {
 .card-body h3,
 .card-body p {
     position: relative;
-    top: -1rem;
+    top: -0.5rem;
 }
 
 .card-text {
@@ -182,7 +185,11 @@ section h2 {
     border-radius: 5px;
     width: 100%;
     margin: auto;
+    background: none;
+    font-size: 20px;
+    color: white;
 }
+
 .card-body .wikipedia {
     /* min-width: 100%; */
     max-height: 5rem;
