@@ -156,6 +156,7 @@ section h2 {
 .card-body p {
     position: relative;
     top: -0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .card-text {
@@ -183,11 +184,20 @@ section h2 {
 .card-body .show-more-btn {
     border: none;
     border-radius: 5px;
-    width: 100%;
+    /* width: 100%; */
+    width: auto;
+
+    position: absolute;
+    /* top: 0px;
+    right: 35px; */
+    top: 1.8rem;
+    right: 0vw;
+    left: 0vw;
+
     margin: auto;
     background: none;
-    font-size: 20px;
-    color: white;
+    font-size: 30px;
+    color: rgb(255, 255, 255, 0.3);
 }
 
 .card-body .wikipedia {
