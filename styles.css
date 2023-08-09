@@ -200,6 +200,12 @@ section h2 {
     color: rgb(255, 255, 255, 0.3);
 }
 
+.card-body .show-more-btn :hover {
+    transform: scale(1.1);
+    transform: translateY(-5px);
+    color: rgb(255, 255, 255, 1);
+}
+
 .card-body .wikipedia {
     /* min-width: 100%; */
     max-height: 5rem;
